@@ -2,6 +2,7 @@
 Implement Gradient Transition similar to Instagram LogIn Screen.
 
 ![Demo](Demo/demo.mp4)
+![APK](app-debug.apk)
 
 #### 1. Make layout full screen
 > ##### Add this to `styles.xml` in res folder.
