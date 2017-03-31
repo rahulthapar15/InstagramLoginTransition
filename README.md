@@ -53,7 +53,7 @@ getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,WindowManager.La
         android:endColor="#7745c6"
         android:angle="90"/>
 </shape>
-```xml
+```
 `color4.xml`
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
