@@ -3,16 +3,16 @@ Implement Gradient Transition similar to Instagram LogIn Screen.
 
 #### 1. Make layout full screen
 > ##### Add this to `styles.xml` in res folder.
-```
+```xml
 <style name="MyTheme" parent="Theme.AppCompat.Light.NoActionBar">
 </style>
 ``` 
 >##### Add this theme to the `AndroidManifest.xml`
-```
+```xml
 android:theme="@style/MyTheme"
 ```
 > ##### In your Main class add the following :
-```
+```java
 requestWindowFeature(Window.FEATURE_NO_TITLE);
 getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,WindowManager.LayoutParams.FLAG_FULLSCREEN);
 ```
@@ -21,7 +21,7 @@ getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,WindowManager.La
 > ##### Add the following in drawable folder
 
 `color1.xml`
-```
+```xml
 <?xml version="1.0" encoding="utf-8"?>
 <shape xmlns:android="http://schemas.android.com/apk/res/android">
     <gradient
@@ -31,7 +31,7 @@ getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,WindowManager.La
 </shape>
 ```
 `color2.xml`
-```
+```xml
 <?xml version="1.0" encoding="utf-8"?>
 <shape xmlns:android="http://schemas.android.com/apk/res/android">
     <gradient
@@ -41,7 +41,7 @@ getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,WindowManager.La
 </shape>
 ```
 `color3.xml`
-```
+```xml
 <?xml version="1.0" encoding="utf-8"?>
 <shape xmlns:android="http://schemas.android.com/apk/res/android">
     <gradient
@@ -49,9 +49,9 @@ getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,WindowManager.La
         android:endColor="#7745c6"
         android:angle="90"/>
 </shape>
-```
+```xml
 `color4.xml`
-```
+```xml
 <?xml version="1.0" encoding="utf-8"?>
 <shape xmlns:android="http://schemas.android.com/apk/res/android">
     <gradient
@@ -63,7 +63,7 @@ getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,WindowManager.La
 
 #### 3. Defining animation-list
 > ##### Add the following in drawable folder
-```
+```xml
 <?xml version="1.0" encoding="utf-8"?>
 <animation-list xmlns:android="http://schemas.android.com/apk/res/android">
     <item
@@ -82,12 +82,12 @@ getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,WindowManager.La
 ```
 
 #### 4. Using this animation-list in activity_main.xml
-```
+```xml
 android:background="@drawable/animation"
 ```
 
 #### 5. Inside Main class (MainActivity.java)
-```
+```java
 AnimationDrawable animation;
 
 @Override
